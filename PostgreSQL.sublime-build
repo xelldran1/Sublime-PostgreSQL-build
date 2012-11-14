@@ -1,0 +1,17 @@
+{
+	"selector": "source.sql",
+    "variants":
+    [
+        {
+            "name": "Run",
+            "cmd": [
+                "/usr/bin/psql",
+                "-h","127.0.0.1",
+                "-p","5432",//"integer"
+                "-U","username",//username
+                "-f","$file",
+                "postgres" // dbname
+            ]
+        }
+    ]
+}
