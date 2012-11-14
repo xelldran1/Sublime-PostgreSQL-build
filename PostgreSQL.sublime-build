@@ -11,8 +11,6 @@
                 "-U","username",//username
                 "-f","$file",
                 "postgres" // dbname
-                // PASSWORD IN .pgpass
-                //http://www.postgresql.org/docs/9.2/static/libpq-pgpass.html
             ]
         }
     ]

@@ -16,8 +16,12 @@
                         "children":
                         [
                             {
-                                "command": "postgresql_settings", 
-                                 "caption": "Settings"
+                                "command": "postgresql_default_settings", 
+                                 "caption": "Settings - Default"
+                            },
+                            {
+                                "command": "postgresql_user_settings", 
+                                 "caption": "Settings - User"
                             },
                             { "caption": "-" }
                         ]

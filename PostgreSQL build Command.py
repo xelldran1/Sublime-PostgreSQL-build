@@ -24,11 +24,20 @@ if not exists(user_build):
     message_dialog("edit PostgreSQL connection settings")
     pgpass_tip()
 
-class Postgresql_SettingsCommand(WindowCommand):
+class PostgresqlDefaultSettingsCommand(WindowCommand):
     def run(self):
+        global default_build
         try:
-            build=glob(join(package_path(),"*.sublime-build"))[0]
-            self.window.open_file(build)
+            self.window.open_file(default_build)
+            pgpass_tip()
+        except Exception, e:
+            error_message(str(e))
+
+class PostgresqlUserSettingsCommand(WindowCommand):
+    def run(self):
+        global user_build
+        try:
+            self.window.open_file(user_build)
             pgpass_tip()
         except Exception, e:
             error_message(str(e))

@@ -1,3 +1,4 @@
 [
-    { "caption": "Preferences: PostgreSQL build", "command": "settings" }
+    { "caption": "Preferences: PostgreSQL build - Default", "command": "postgresql_default_settings" },
+    { "caption": "Preferences: PostgreSQL build - User", "command": "postgresql_user_settings" }
 ]
