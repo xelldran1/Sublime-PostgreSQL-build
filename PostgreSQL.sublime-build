@@ -1,5 +1,15 @@
 {
 	"selector": "source.sql",
+    "cmd": [
+        "/usr/bin/psql",
+        "-h","127.0.0.1",
+        "-p","5432",//"integer"
+        "-U","username",//username
+        "-f","$file",
+        "postgres" // dbname
+        //password in pgpass
+        //www.postgresql.org/docs/9.2/static/libpq-pgpass.html
+    ],
     "variants":
     [
         {
@@ -11,6 +21,8 @@
                 "-U","username",//username
                 "-f","$file",
                 "postgres" // dbname
+                //password in pgpass
+                //www.postgresql.org/docs/9.2/static/libpq-pgpass.html
             ]
         }
     ]
